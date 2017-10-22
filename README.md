@@ -33,10 +33,10 @@ As a backend, this projects provides a simple REST api to route
 
 ## TODO
 
-[x] Basic routing  
-[x] PBF import  
-[x] REST API  
-[]  Use Database for routing
-[]  Implement energy optimal shortest path algorithm
-[]  Implement one energy consumption algorithm (see other nav-e projects)
-[]  Port range polygon (see range-anxiety project)
+- [x] Basic routing
+- [x] PBF import
+- [x] REST API
+- []  Use Database for routing
+- []  Implement energy optimal shortest path algorithm
+- []  Implement one energy consumption algorithm (see other nav-e projects)
+- []  Port range polygon (see range-anxiety project)
