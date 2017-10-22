@@ -1,4 +1,4 @@
-package routing
+package algorithm
 
 import (
 	"github.com/nav-e/routing/osm"

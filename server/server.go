@@ -9,13 +9,13 @@ import (
 	"strconv"
 
 	"github.com/bmizerany/pat"
+	"github.com/nav-e/routing/algorithm"
 	"github.com/nav-e/routing/osm"
-	"github.com/nav-e/routing/routing"
 )
 
 type serverConfig struct {
 	db     osm.SearchStore
-	router routing.Dijkstra
+	router algorithm.Dijkstra
 	port   int
 }
 
@@ -61,7 +61,7 @@ func Start(r io.Reader) {
 	config.db = osm.NewCache()
 	pbf.WriteTo(config.db)
 	log.Println("Converting osm data to graph")
-	config.router = routing.Dijkstra{Graph: config.db, Metric: &routing.Meter{}}
+	config.router = algorithm.Dijkstra{Graph: config.db, Metric: &algorithm.Meter{}}
 
 	m := pat.New()
 	m.Get("/:algorithm/from/:from/to/:to", http.HandlerFunc(routingHandler))

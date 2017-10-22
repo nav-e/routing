@@ -1,12 +1,12 @@
-package routing_test
+package algorithm_test
 
 import (
 	"log"
 	"os"
 	"testing"
 
+	"github.com/nav-e/routing/algorithm"
 	"github.com/nav-e/routing/osm"
-	"github.com/nav-e/routing/routing"
 )
 
 // Parameters for test route
@@ -25,7 +25,7 @@ func TestDijkstra(t *testing.T) {
 	pbf.WriteTo(cache)
 
 	// Routing test
-	dijkstra := routing.Dijkstra{Graph: cache, Metric: &routing.Meter{}}
+	dijkstra := algorithm.Dijkstra{Graph: cache, Metric: &algorithm.Meter{}}
 	start := cache.Get(startID)
 	goal := cache.Get(goalID)
 	path, err := dijkstra.ShortestPath(start, goal)
