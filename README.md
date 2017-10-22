@@ -40,3 +40,9 @@ As a backend, this projects provides a simple REST api to route
 - [ ] Implement energy optimal shortest path algorithm
 - [ ] Implement one energy consumption algorithm (see other nav-e projects)
 - [ ] Port range polygon (see range-anxiety project)
+- [ ] Improve osm data handling
+  - [ ] We use the `name` tag for search. This often gives nodes with no neighbors
+  - [ ] We interpret all ways as streets
+  - [ ] We interpret all streets both ways (even one way streets)
+  - [ ] We don't filter any nodes/streets
+  - [ ] Street properties are not provided for routing
