@@ -37,6 +37,7 @@ As a backend, this projects provides a simple REST api to route
 - [x] PBF import
 - [x] REST API
 - [ ] Use Database for routing
+  - [ ] See `osm/cache.go` for an in-memory implementation
 - [ ] Implement energy optimal shortest path algorithm
 - [ ] Implement one energy consumption algorithm (see other nav-e projects)
 - [ ] Port range polygon (see range-anxiety project)
@@ -46,3 +47,4 @@ As a backend, this projects provides a simple REST api to route
   - [ ] We interpret all streets both ways (even one way streets)
   - [ ] We don't filter any nodes/streets
   - [ ] Street properties are not provided for routing
+- [ ] Implement road contraction (like Contraction Hierarchies) to make routing fast
