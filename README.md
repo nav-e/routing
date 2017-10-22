@@ -47,4 +47,5 @@ As a backend, this projects provides a simple REST api to route
   - [ ] We interpret all streets both ways (even one way streets)
   - [ ] We don't filter any nodes/streets
   - [ ] Street properties are not provided for routing
+  - [ ] Speed limits are not used at all, the shortest path is calculated
 - [ ] Implement road contraction (like Contraction Hierarchies) to make routing fast
